@@ -4,7 +4,8 @@ body {
     margin-top: 2em;
 } 
 h1 {
-    font-style: italic;
+    font-family: 'Jim Nightshade';
+    font-weight: normal;
 }
 
 @media(max-width: 768px){
