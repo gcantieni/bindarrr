@@ -16,9 +16,10 @@ while read line; do
     if [[ "$line" == \#* ]]; then
 	filename=$(echo ${title#\# } | tr '[:upper:]' '[:lower:]' |
 		       sed -e 's/[\*\/’]//g' -e 's/ /-/g').html
-	#echo "$song" | pandoc --from markdown_strict --to html > $songdir/$filename
+	echo "$song" | pandoc --from markdown_strict --to html > ../songs/$filename
 	# prepend style sheet
-	echo -e "<link rel='stylesheet' href='../css/song.css'>\n$(cat ../songs/$filename)" > ../songs/$filename
+	echo -e "<link rel='stylesheet' href='../css/song.css'><meta name='viewport' content='width=device-width, initial-scale=1.0'>\n$(cat ../songs/$filename)" > ../songs/$filename
+     
 	printf -v toc "$toc\n        <li><a href='songs/$filename'>${title#\# }</a></li>"
 	title=$line
 	song=""
