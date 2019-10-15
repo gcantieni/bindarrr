@@ -1,0 +1,31 @@
+#!/bin/bash
+
+inputfile='bindarrr.md'
+songdir='songs'
+cleanedfile='bindarr-scrubbed.md'
+template='index-template.html'
+index='../index.html'
+
+# Get rid of fucking carriage returns. Burn them! Also some other weird markdown input like "** **"
+sed -e 's/\r/  \n/g' -e "s/\*\* \*\*//g" $inputfile > $cleanedfile
+title="Table of Contents"
+song="# Table of Contents"
+toc=""
+while read line; do
+    # Handle title:
+    if [[ "$line" == \#* ]]; then
+	filename=$(echo ${title#\# } | tr '[:upper:]' '[:lower:]' |
+		       sed -e 's/[\*\/’]//g' -e 's/ /-/g').html
+	#echo "$song" | pandoc --from markdown_strict --to html > $songdir/$filename
+	# prepend style sheet
+	echo -e "<link rel='stylesheet' href='../css/song.css'>\n$(cat ../songs/$filename)" > ../songs/$filename
+	printf -v toc "$toc\n        <li><a href='songs/$filename'>${title#\# }</a></li>"
+	title=$line
+	song=""
+    fi
+    printf -v song "$song  \n$line"
+done < $cleanedfile
+
+awk -v r="$toc" "{gsub(/REPLACE/,r)}1" $template > $index
+
+rm $cleanedfile

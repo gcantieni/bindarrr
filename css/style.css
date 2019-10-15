@@ -1,0 +1,73 @@
+body {
+    padding:0;
+    margin:0;
+    font: 15px/1.5 Arial,Helvetica,sans-serif;
+}
+nav ul {
+    list-style-type:none;
+}
+.container {
+    width:80%;
+    margin:auto;
+}
+#logo {
+    font-size: 3em;
+    font: 3em TimesNewRoman, serif;
+    font-style: italic;
+    font-weight:bold;
+}
+#banner {
+    background: black;
+    min-height: 5em;
+    padding-top: 2em;
+    margin-bottom: 1.5em;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font: 1em TimesNewRoman, serif;
+    font-weight:bold;
+}
+header a:hover {
+    color: red;
+}
+nav {
+    float: right;
+}
+nav li {
+    display: inline;
+    padding: 0.30em;
+    text-transform: uppercase;
+}
+#songList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    margin: 0;
+    font: 2em TimesNewRoman, serif;
+}
+hr {
+    margin-top: 0;
+    size: 1px;
+}
+input {
+    margin-top: 1em;
+    padding: 0.3em;
+    margin-bottom: 1em;
+ 
+}
+#songList a {
+    color: black;
+}
+#songList a:hover {
+    color: white;
+    background: red;
+}
+
+@media(max-width: 768px){
+    header nav {
+	float: none;
+    }
+}

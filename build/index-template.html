@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A compilation of shanties and folk songs sung by Brown's only pirate a Capella group">
+    <meta name="keywords" content="folk, folk songs, shanties, arrr, arrr!!!, brown, brown university, pirate, pireate songs">
+    <meta author="Gus Cantieni">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bindarrr</title>
+  </head>
+  <body>
+    <div id="banner">
+      <header>
+	<div class="container">
+	  <a id="logo" href="index.html">Bindarrr</a>
+	  <nav>
+	    <ul>
+	      <li><a href="index.html">Songs</a></li>
+	      <li><a href="about.html">About</a></li>
+	      <li><a href="suggestions.html">Suggest songs</a></li>
+	      <li><a href="contact.html">Contact us</a></li>
+	    </ul>
+	  </nav>
+        </div>
+      </header>
+    </div>
+    <section id="songs">
+      <script>
+	function filterSongs() {
+	    var input, filter, ul, li, a, i, txtValue;
+	    input = document.getElementById('songInput');
+	    filter = input.value.toUpperCase().split(" ");
+	    ul = document.getElementById('songList');
+	    li = ul.getElementsByTagName('li');
+	    for (i=0;i<li.length;i++){
+		a = li[i].getElementsByTagName('a')[0];
+		txtValue = a.textContent || a.innerText;
+		if (filter.every( el => txtValue.toUpperCase().includes(el))) {
+		    li[i].style.display = "";
+		} else {
+		    li[i].style.display = "none";
+		}
+	    }
+	}
+      </script>
+      <div class="container">
+	<h2>Songs</h2>
+	<hr>
+        <input type="text" id="songInput" onkeyup="filterSongs()" placeholder="Search for a shanty...">
+	<ul id="songList">
+	  REPLACE
+	</ul>
+      </div>
+    </section>
+</html>
