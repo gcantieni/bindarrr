@@ -6,3 +6,9 @@ body {
 h1 {
     font-style: italic;
 }
+
+@media(max-width: 768px){
+    header nav {
+	float: none;
+    }
+}
