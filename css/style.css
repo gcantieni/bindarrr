@@ -70,4 +70,8 @@ input {
     header nav {
 	float: none;
     }
+    section {
+	text-align: center;
+	width: 100%;
+    }
 }
