@@ -70,4 +70,7 @@ input {
     header nav {
 	float: none;
     }
+    input {
+	font-size: 16px; /* Avoid zooming in on text area on select */
+    }
 }
