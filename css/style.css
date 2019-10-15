@@ -12,9 +12,7 @@ nav ul {
 }
 #logo {
     font-size: 3em;
-    font: 3em TimesNewRoman, serif;
-    font-style: italic;
-    font-weight:bold;
+    font: 3em 'Jim Nightshade', TimesNewRoman, serif;
 }
 #banner {
     background: black;
