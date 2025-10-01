@@ -5573,7 +5573,7 @@ For my love, it was the end
 
 Going back to Sammy’s Bar
 
-# I don’t need no Yankee car
+I don’t need no Yankee car
 
 # Sam’s Gone Away {#sam’s-gone-away}
 
