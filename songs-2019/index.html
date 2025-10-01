@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="A compilation of shanties and folk songs sung by Brown's only pirate a Capella group">
+    <meta name="keywords" content="folk, folk songs, shanties, arrr, arrr!!!, brown, brown university, pirate, pireate songs">
+    <meta author="Gus Cantieni">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href='https://fonts.googleapis.com/css?family=Jim Nightshade' rel='stylesheet'>
+    <title>Bindarrr</title>
+  </head>
+  <body>
+    <div id="banner">
+      <header>
+	<div class="container">
+	  <a id="logo" href="index.html">Bindarrr</a>
+	  <nav>
+	    <ul>
+	      <li><a href="index.html">Songs</a></li>
+	      <li><a href="about.html">About</a></li>
+	      <li><a href="suggestions.html">Suggest songs</a></li>
+	      <li><a href="contact.html">Contact us</a></li>
+	    </ul>
+	  </nav>
+        </div>
+      </header>
+    </div>
+    <section id="songs">
+      <script>
+	function filterSongs() {
+	    var input, filter, ul, li, a, i, txtValue;
+	    input = document.getElementById('songInput');
+	    filter = input.value.toUpperCase().split(" ");
+	    ul = document.getElementById('songList');
+	    li = ul.getElementsByTagName('li');
+	    for (i=0;i<li.length;i++){
+		a = li[i].getElementsByTagName('a')[0];
+		txtValue = a.textContent || a.innerText;
+		if (filter.every( el => txtValue.toUpperCase().includes(el))) {
+		    li[i].style.display = "";
+		} else {
+		    li[i].style.display = "none";
+		}
+	    }
+	}
+      </script>
+      <div class="container">
+	<h2>Songs</h2>
+	<hr>
+        <input type="text" id="songInput" onkeyup="filterSongs()" placeholder="Search for a shanty...">
+	<ul id="songList">
+	  
+        <li><a href='songs/table-of-contents.html'>Table of Contents</a></li>
+        <li><a href='songs/adieu,-sweet-lovely-nancy.html'>Adieu, Sweet Lovely Nancy</a></li>
+        <li><a href='songs/all-for-me-grog.html'>All For Me Grog</a></li>
+        <li><a href='songs/amble-town-(home-dearie-home).html'>Amble Town (Home Dearie Home)</a></li>
+        <li><a href='songs/a-rovin.html'>A-Rovin’</a></li>
+        <li><a href='songs/auld-triangle.html'>Auld Triangle</a></li>
+        <li><a href='songs/the-ball-of-kerrymuir.html'>The Ball Of Kerrymuir</a></li>
+        <li><a href='songs/the-ballad-of-captain-kidd.html'>The Ballad Of Captain Kidd</a></li>
+        <li><a href='songs/baltimore-whores.html'>Baltimore Whores</a></li>
+        <li><a href='songs/the-barley-mow.html'>The Barley Mow</a></li>
+        <li><a href='songs/barretts-privateers.html'>Barrett's Privateers</a></li>
+        <li><a href='songs/ben-backstay.html'>Ben Backstay</a></li>
+        <li><a href='songs/the-bergen.html'>The Bergen</a></li>
+        <li><a href='songs/black-is-the-color-of-my-true-loves-hair.html'>Black Is The Color Of My True Love’s Hair</a></li>
+        <li><a href='songs/black-velvet-band.html'>Black Velvet Band</a></li>
+        <li><a href='songs/blackthorn.html'>Blackthorn</a></li>
+        <li><a href='songs/blood-red-roses.html'>Blood Red Roses</a></li>
+        <li><a href='songs/blow-the-man-down.html'>Blow The Man Down</a></li>
+        <li><a href='songs/blow-ye-winds-in-the-morning.html'>Blow Ye Winds In The Morning</a></li>
+        <li><a href='songs/the-boatmans-cure.html'>The Boatman’s Cure</a></li>
+        <li><a href='songs/bold-privateer.html'>Bold Privateer</a></li>
+        <li><a href='songs/the-bonnie-ship-the-diamond.html'>The Bonnie Ship the Diamond</a></li>
+        <li><a href='songs/boozing.html'>Boozing</a></li>
+        <li><a href='songs/bullgine.html'>Bullgine</a></li>
+        <li><a href='songs/bully-in-the-alley.html'>Bully In The Alley</a></li>
+        <li><a href='songs/bound-for-amerikay.html'>Bound for Amerikay</a></li>
+        <li><a href='songs/cape-cod-girls--heave-away--bound-for-australia.html'>Cape Cod Girls / Heave Away / Bound For Australia</a></li>
+        <li><a href='songs/chicken-on-a-raft.html'>Chicken On A Raft</a></li>
+        <li><a href='songs/the-coasts-of-high-barbary.html'>The Coasts Of High Barbary</a></li>
+        <li><a href='songs/cockles-and-mussels.html'>Cockles And Mussels</a></li>
+        <li><a href='songs/colliers-song.html'>Collier’s Song</a></li>
+        <li><a href='songs/come-get-your-duds-in-order.html'>Come Get Your Duds In Order</a></li>
+        <li><a href='songs/congo-river.html'>Congo River</a></li>
+        <li><a href='songs/courting-in-the-kitchen.html'>Courting In The Kitchen</a></li>
+        <li><a href='songs/the-crawl.html'>The Crawl</a></li>
+        <li><a href='songs/the-crayfish.html'>The Crayfish</a></li>
+        <li><a href='songs/danny-boy.html'>Danny Boy</a></li>
+        <li><a href='songs/oh,-dear-grog.html'>Oh, Dear Grog</a></li>
+        <li><a href='songs/dental-dams.html'>Dental Dams</a></li>
+        <li><a href='songs/donkey-riding.html'>Donkey Riding</a></li>
+        <li><a href='songs/dont-forget-your-old-shipmate.html'>Don’t Forget Your Old Shipmate</a></li>
+        <li><a href='songs/down-among-the-dead-men.html'>Down Among The Dead Men</a></li>
+        <li><a href='songs/the-dreadnaught.html'>The Dreadnaught</a></li>
+        <li><a href='songs/a-drop-of-nelsons-blood.html'>A Drop Of Nelson’s Blood</a></li>
+        <li><a href='songs/drunken-sailor.html'>Drunken Sailor</a></li>
+        <li><a href='songs/eddystone-light.html'>Eddystone Light</a></li>
+        <li><a href='songs/essequibo-river.html'>Essequibo River</a></li>
+        <li><a href='songs/excursion-around-the-bay.html'>Excursion Around The Bay</a></li>
+        <li><a href='songs/farewell-to-nova-scotia.html'>Farewell To Nova Scotia</a></li>
+        <li><a href='songs/farewell-to-tarwathie.html'>Farewell To Tarwathie</a></li>
+        <li><a href='songs/fathom-the-bowl.html'>Fathom The Bowl</a></li>
+        <li><a href='songs/fiddlers-green.html'>Fiddler’s Green</a></li>
+        <li><a href='songs/fields-of-athenry.html'>Fields Of Athenry</a></li>
+        <li><a href='songs/the-final-trawl.html'>The Final Trawl</a></li>
+        <li><a href='songs/finnegans-wake.html'>Finnegan’s Wake</a></li>
+        <li><a href='songs/fire-down-below.html'>Fire Down Below</a></li>
+        <li><a href='songs/the-flowers-of-bermuda.html'>The Flowers Of Bermuda</a></li>
+        <li><a href='songs/foggy-dew.html'>Foggy Dew</a></li>
+        <li><a href='songs/friggin-in-the-riggin.html'>Friggin’ In The Riggin’</a></li>
+        <li><a href='songs/general-taylor.html'>General Taylor</a></li>
+        <li><a href='songs/get-up-jack,-john-sit-down.html'>Get Up Jack, John Sit Down</a></li>
+        <li><a href='songs/the-golden-vanity.html'>The Golden Vanity</a></li>
+        <li><a href='songs/greenland-whale-fisheries.html'>Greenland Whale Fisheries</a></li>
+        <li><a href='songs/the-grey-funnel-line.html'>The Grey Funnel Line</a></li>
+        <li><a href='songs/haul-away-joe.html'>Haul Away Joe</a></li>
+        <li><a href='songs/haul-on-the-bowline.html'>Haul On The Bowline</a></li>
+        <li><a href='songs/heres-a-health-to-the-company.html'>Here’s A Health to the Company</a></li>
+        <li><a href='songs/hieland-laddie.html'>Hieland Laddie</a></li>
+        <li><a href='songs/hills-of-connemara.html'>Hills Of Connemara</a></li>
+        <li><a href='songs/hoist-the-colours.html'>Hoist The Colours</a></li>
+        <li><a href='songs/the-irish-rover.html'>The Irish Rover</a></li>
+        <li><a href='songs/ill-tell-me-ma.html'>I’ll Tell Me Ma</a></li>
+        <li><a href='songs/ise-the-by.html'>I’se The B’y</a></li>
+        <li><a href='songs/john-kamaka.html'>John Kamaka</a></li>
+        <li><a href='songs/johnny-come-down-to-hilo.html'>Johnny Come Down To Hilo</a></li>
+        <li><a href='songs/johnnys-gone-for-a-soldier.html'>Johnny’s Gone for a Soldier</a></li>
+        <li><a href='songs/johnny-i-hardly-knew-ye.html'>Johnny I Hardly Knew Ye</a></li>
+        <li><a href='songs/johnny-jump-up.html'>Johnny Jump Up</a></li>
+        <li><a href='songs/join-the-british-army.html'>Join the British Army</a></li>
+        <li><a href='songs/london-julie.html'>London Julie</a></li>
+        <li><a href='songs/the-last-shanty.html'>The Last Shanty</a></li>
+        <li><a href='songs/leave-her,-johnny,-leave-her.html'>Leave Her, Johnny, Leave Her</a></li>
+        <li><a href='songs/the-leaving-of-liverpool.html'>The Leaving Of Liverpool</a></li>
+        <li><a href='songs/lukeys-boat.html'>Lukey’s Boat</a></li>
+        <li><a href='songs/maggie-may.html'>Maggie May</a></li>
+        <li><a href='songs/the-mariners-revenge-song.html'>The Mariner's Revenge Song</a></li>
+        <li><a href='songs/the-mary-ellen-carter.html'>The Mary Ellen Carter</a></li>
+        <li><a href='songs/mary-had-a-little-lamb.html'>Mary Had A Little Lamb</a></li>
+        <li><a href='songs/mary-mac.html'>Mary Mac</a></li>
+        <li><a href='songs/marys-wedding.html'>Mary’s Wedding</a></li>
+        <li><a href='songs/the-mermaid.html'>The Mermaid</a></li>
+        <li><a href='songs/mingulay-boat-song.html'>Mingulay Boat Song</a></li>
+        <li><a href='songs/the-minstrel-boy.html'>The Minstrel Boy</a></li>
+        <li><a href='songs/molasses.html'>Molasses</a></li>
+        <li><a href='songs/morning-glory.html'>Morning Glory</a></li>
+        <li><a href='songs/morning-shanty.html'>Morning Shanty</a></li>
+        <li><a href='songs/the-mountain-dew.html'>The Mountain Dew</a></li>
+        <li><a href='songs/nancy-whiskey.html'>Nancy Whiskey</a></li>
+        <li><a href='songs/the-night-that-paddy-murphy-died.html'>The Night That Paddy Murphy Died</a></li>
+        <li><a href='songs/northwest-passage.html'>Northwest Passage</a></li>
+        <li><a href='songs/the-north-sea-shoals.html'>The North Sea Shoals</a></li>
+        <li><a href='songs/the-old-churchyard.html'>The Old Churchyard</a></li>
+        <li><a href='songs/old-dun-cow.html'>Old Dun Cow</a></li>
+        <li><a href='songs/old-turf-fire.html'>Old Turf Fire</a></li>
+        <li><a href='songs/p-stands-for-paddy.html'>P Stands For Paddy</a></li>
+        <li><a href='songs/paddy-doyles-boots.html'>Paddy Doyle’s Boots</a></li>
+        <li><a href='songs/paddy-lay-back.html'>Paddy Lay Back</a></li>
+        <li><a href='songs/paddys-lament.html'>Paddy’s Lament</a></li>
+        <li><a href='songs/paddy-on-the-railway.html'>Paddy on the Railway</a></li>
+        <li><a href='songs/the-parting-glass.html'>The Parting Glass</a></li>
+        <li><a href='songs/the-peat-fire-flame.html'>The Peat Fire Flame</a></li>
+        <li><a href='songs/pirate-chantey.html'>Pirate Chantey</a></li>
+        <li><a href='songs/the-pirates-who-dont-do-anything.html'>The Pirates Who Don’t Do Anything</a></li>
+        <li><a href='songs/a-professional-pirate.html'>A Professional Pirate</a></li>
+        <li><a href='songs/pull-down-below.html'>Pull Down Below</a></li>
+        <li><a href='songs/pump-shanty.html'>Pump Shanty</a></li>
+        <li><a href='songs/rambling-soldier.html'>Rambling Soldier</a></li>
+        <li><a href='songs/randy-dandy-o.html'>Randy Dandy-O</a></li>
+        <li><a href='songs/rant-and-roar.html'>Rant and Roar</a></li>
+        <li><a href='songs/red-haired-mary.html'>Red-Haired Mary</a></li>
+        <li><a href='songs/rio-grande.html'>Rio Grande</a></li>
+        <li><a href='songs/the-rocky-road-to-dublin.html'>The Rocky Road To Dublin</a></li>
+        <li><a href='songs/roll-alabama-roll.html'>Roll Alabama Roll</a></li>
+        <li><a href='songs/roll-down.html'>Roll Down</a></li>
+        <li><a href='songs/roll-the-woodpile-down.html'>Roll The Woodpile Down</a></li>
+        <li><a href='songs/roll-your-leg-over.html'>Roll Your Leg Over</a></li>
+        <li><a href='songs/rollin-down-to-old-maui.html'>Rollin’ Down To Old Maui</a></li>
+        <li><a href='songs/the-rolling-hills-of-the-border.html'>The Rolling Hills Of The Border</a></li>
+        <li><a href='songs/rosin-the-beau.html'>Rosin the Beau</a></li>
+        <li><a href='songs/row-on.html'>Row On</a></li>
+        <li><a href='songs/santiano.html'>Santiano</a></li>
+        <li><a href='songs/saucy-sailor.html'>Saucy Sailor</a></li>
+        <li><a href='songs/seven-drunken-nights.html'>Seven Drunken Nights</a></li>
+        <li><a href='songs/the-scotsman.html'>The Scotsman</a></li>
+        <li><a href='songs/shenandoah.html'>Shenandoah</a></li>
+        <li><a href='songs/shiver-my-timbers.html'>Shiver My Timbers</a></li>
+        <li><a href='songs/shoals-of-herring.html'>Shoals Of Herring</a></li>
+        <li><a href='songs/south-australia.html'>South Australia</a></li>
+        <li><a href='songs/spanish-ladies.html'>Spanish Ladies</a></li>
+        <li><a href='songs/spoonys-lullaby.html'>Spoony’s Lullaby</a></li>
+        <li><a href='songs/sun-down-below.html'>Sun Down Below</a></li>
+        <li><a href='songs/take-it-from-day-to-day.html'>Take It From Day To Day</a></li>
+        <li><a href='songs/three-fishers.html'>Three Fishers</a></li>
+        <li><a href='songs/tobacco-island.html'>Tobacco Island</a></li>
+        <li><a href='songs/what-will-we-do?.html'>What WIll We Do?</a></li>
+        <li><a href='songs/wave-over-wave.html'>Wave Over Wave</a></li>
+        <li><a href='songs/the-ways-of-man.html'>The Ways Of Man</a></li>
+        <li><a href='songs/wellerman.html'>Wellerman</a></li>
+        <li><a href='songs/whiskey.html'>Whiskey</a></li>
+        <li><a href='songs/whiskey-in-the-jar.html'>Whiskey In The Jar</a></li>
+        <li><a href='songs/whiskey-youre-the-devil.html'>Whiskey You’re The Devil</a></li>
+        <li><a href='songs/wild-mountain-thyme.html'>Wild Mountain Thyme</a></li>
+	</ul>
+      </div>
+    </section>
+</html>

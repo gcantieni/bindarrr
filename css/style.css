@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+
 body {
     padding:0;
     margin:0;
@@ -9,12 +11,13 @@ nav ul {
 .container {
     width:80%;
     margin:auto;
+    max-width: 70ch;
 }
 #logo {
     font-size: 3em;
-    font: 3em 'Jim Nightshade', TimesNewRoman, serif;
+    font-family: 'Jim Nightshade';
     font-style: italic;
-    font-weight:bold;
+    font-weight: bold;
 }
 #banner {
     background: black;
@@ -64,6 +67,11 @@ input {
 #songList a:hover {
     color: white;
     background: red;
+}
+
+.bodyText {
+    font-style: italic;
+    font-size: 1.5em;
 }
 
 @media(max-width: 768px){
