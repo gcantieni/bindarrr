@@ -4438,7 +4438,7 @@ Or mellow with ale from the horn,
 He’ll take no wrong when he lieth along  
 ’Neath Oak and Ash and Thorn\!
 
-# Oh, do not tell the Priest our plight, Or he would call it a sin, But we’ve been out in the woods all night, A-conjuring Summer in\! We bring you good news by word of mouth Good news for cattle and corn Sure as the Sun come up from the South, With Oak and Ash and Thorn\! {#oh,-do-not-tell-the-priest-our-plight,-or-he-would-call-it-a-sin,-but-we’ve-been-out-in-the-woods-all-night,-a-conjuring-summer-in!-we-bring-you-good-news-by-word-of-mouth-good-news-for-cattle-and-corn-sure-as-the-sun-come-up-from-the-south,-with-oak-and-ash-and-thorn!}
+Oh, do not tell the Priest our plight, Or he would call it a sin, But we’ve been out in the woods all night, A-conjuring Summer in\! We bring you good news by word of mouth Good news for cattle and corn Sure as the Sun come up from the South, With Oak and Ash and Thorn\! 
 
 # 
 
@@ -5194,7 +5194,7 @@ All along that singing river, that black mass of men was seen
 High above their shining weapons flew their own beloved green  
 Death to every foe and traitor, whistle out the marching tune
 
-# **And hoorah me boys for freedom 'tis the rising of the moon** {#and-hoorah-me-boys-for-freedom-'tis-the-rising-of-the-moon}
+**And hoorah me boys for freedom 'tis the rising of the moon** 
 
 # The Rocky Road To Dublin
 
