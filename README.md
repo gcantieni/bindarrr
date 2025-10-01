@@ -8,15 +8,16 @@ Songs are  stored in `songs` and the tools and files for auto-generating the web
 
 ## How to update
 
-### Convert Google Doc to markdown
-To update the contents of the website, you'll want to clone this repo. After modifying the Google Doc to the state you want it in, you can go to `tools > script editor`. Then copy and paste the contents of `build/convert-google-doc.gss` into the editor page (overwriting what was already there) and use `run > convertToMd`. This should send a `.md` file to your email. You can save this as `build/bindarrr.md` (replacing the old `bindarrr.md`).
+### Save google doc in markdown format
+
+Google Docs now has native markdown export. Simply go to file > save > markdown. Copy or save the file to md-converter/bindarrr.md (replacing the previous one).
 
 ### Generate the site based on the new markdown bindarrr
-Now you can run the site generation script. It has a few dependencies. Install any that you don't have: `pandoc`, `bash`, `awk`, `sed`. 
-```
-./build/build-song-page
-```
-This should take the contents of bindarrr.md and convert all songs into individual webpages under the `songs` directory and update the table of contents in `index.html` to point to them. Hooray, you've just created an updated version of the website! 
+Now you can run the site generation program. It is a rust program, which is the only dependency. Install rust if you don't have it, and run `cargo run` in the md-converter subdirectory.
+
+This will output to `md-converter/output` and will contain both an `index.html` file and a `songs` directory of html pages. You might need to slightly hand-edit the md file and re-run if Google has decided to output some nonesense. Once you're satisfied, you can copy back up the current songs directory into e.g. `songs-2026`, overwrite `index.html` with the new one, and copy `output/songs` to `songs`. Then you can safely remove the `output` directory.
+
+Hooray, you've just created an updated version of the website! 
 
 ### Push the new website onto the web
 Now you can just take these  local changes push them to the website:
