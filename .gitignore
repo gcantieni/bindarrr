@@ -1,0 +1,8 @@
+# Rust build outputs for md-converter
+md-converter/target/
+md-converter/Cargo.lock
+
+# Rustfmt backup files for md-converter
+md-converter/**/*.rs.bk
+md-converter/.DS_Store
+
